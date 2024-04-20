@@ -24,30 +24,22 @@ if __name__ == "__main__":
 
 
 
+# Task 2: Guess the number programmatically through linear search
+def guess_random_num_linear(tries, start, stop):
+    target_number = random.randint(start, stop)
+    print(f"Target number: {target_number}")
 
+    for guess in range(start, stop + 1):
+        if tries == 0:
+            print("Out of tries!")
+            return
+        print(f"Trying with: {guess}")
+        if guess == target_number:
+            print("Success! The computer guessed the number.")
+            return
+        tries -= 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    print("Failed to guess the number within the tries provided.")
 
 
 
