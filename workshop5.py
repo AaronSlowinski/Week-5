@@ -58,6 +58,8 @@ def guess_random_num_binary(tries, start, stop):
     low = start
     high = stop
         
+    print(f"Number to guess: {target}")
+    
     while tries != 0:
         print(f"Number of tries left: {tries}")
         guess = (low + high) // 2
@@ -77,4 +79,4 @@ def guess_random_num_binary(tries, start, stop):
     print("Sorry, you didn't guess the number. Better luck next time!")
     
 if __name__ == "__main__":
-    guess_random_num_binary(5, 0, 10)
+    guess_random_num_binary(5, 0, 100)
