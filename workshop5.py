@@ -1,3 +1,9 @@
+"""
+Aaron S.
+Week 5 Workshop: Guess the number game
+04/20/2024
+"""
+
 import random
 
 def guess_random_number(tries, start, stop):
@@ -19,8 +25,8 @@ def guess_random_number(tries, start, stop):
     
     print("Sorry, you didn't guess the number. Better luck next time!")
 
-if __name__ == "__main__":
-    guess_random_number(5, 0, 10)
+# if __name__ == "__main__":
+#    guess_random_number(5, 0, 10)
 
 
 
@@ -41,7 +47,8 @@ def guess_random_num_linear(tries, start, stop):
 
     print("Failed to guess the number within the tries provided.")
 
-
+# if __name__ == "__main__":
+#    guess_random_num_linear(5, 0, 10)
 
 
 
@@ -68,3 +75,6 @@ def guess_random_num_binary(tries, start, stop):
         tries -= 1
         
     print("Sorry, you didn't guess the number. Better luck next time!")
+    
+if __name__ == "__main__":
+    guess_random_num_binary(5, 0, 10)
