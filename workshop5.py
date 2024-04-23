@@ -7,10 +7,18 @@ Week 5 Workshop: Guess the number game
 import random
 
 def guess_random_number(tries, start, stop):
+    """
+    Function to play the guess the number game.
+    
+    Parameters:
+    tries (int): The number of tries allowed to guess the number.
+    start (int): The lower bound of the range of numbers to guess from.
+    stop (int): The upper bound of the range of numbers to guess from.
+    """
     target = random.randint(start, stop)
     
     while tries != 0:
-        print(f"Number of tires left: {tries}")
+        print(f"Number of tries left: {tries}")
         guess = int(input("Guess a number between 0 and 10: "))
         
         if guess == target:
@@ -32,6 +40,14 @@ def guess_random_number(tries, start, stop):
 
 # Task 2: Guess the number programmatically through linear search
 def guess_random_num_linear(tries, start, stop):
+    """
+    Function to guess the number programmatically through linear search.
+    
+    Parameters:
+    tries (int): The number of tries allowed to guess the number.
+    start (int): The lower bound of the range of numbers to guess from.
+    stop (int): The upper bound of the range of numbers to guess from.
+    """
     target_number = random.randint(start, stop)
     print(f"Target number: {target_number}")
 
@@ -54,6 +70,14 @@ def guess_random_num_linear(tries, start, stop):
 
 #task 3 - random number guessing game with binary search
 def guess_random_num_binary(tries, start, stop):
+    """
+    Function to play the random number guessing game with binary search.
+    
+    Parameters:
+    tries (int): The number of tries allowed to guess the number.
+    start (int): The lower bound of the range of numbers to guess from.
+    stop (int): The upper bound of the range of numbers to guess from.
+    """
     target = random.randint(start, stop)
     low = start
     high = stop
