@@ -55,3 +55,5 @@ def _update_screen(self):
     pygame.display.flip() 
 
 available_space_x = settings.screen_width - (2* alien_width)
+
+nubmer_of_aliens_x = available_space_x // (2 * alien_width)
